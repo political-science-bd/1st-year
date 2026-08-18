@@ -1,122 +1,171 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <!-- Navigation Header -->
-<header style="background-color: #1b4332; color: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-  <div style="font-size: 20px; font-weight: bold;">
-    <a href="index.html" style="color: #fff; text-decoration: none;">NU Political Science Hub</a>
-  </div>
-  <nav style="display: flex; gap: 20px; font-size: 15px;">
-    <a href="index.html" style="color: #fff; text-decoration: none; font-weight: 500;">হোম</a>
-    <a href="about.html" style="color: #fff; text-decoration: none; font-weight: 500;">আমাদের সম্পর্কে</a>
-    <a href="contact.html" style="color: #fff; text-decoration: none; font-weight: 500;">যোগাযোগ</a>
-    <a href="privacy.html" style="color: #fff; text-decoration: none; font-weight: 500;">Privacy Policy</a>
-  </nav>
-</header>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Political Science 1st Year Notes & PDF</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
-        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
-        header { background: #1b4332; color: white; padding: 2rem; text-align: center; }
-        header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-        .container { max-width: 1000px; margin: 20px auto; padding: 0 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
-        .card { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #2d6a4f; }
-        .card h3 { color: #1b4332; margin-bottom: 5px; font-size: 1.2rem; }
-        .card p { font-size: 0.9rem; color: #555; margin-bottom: 10px; }
-        .code { background: #e9f5ec; padding: 2px 6px; border-radius: 4px; font-size: 0.85rem; color: #2d6a4f; font-weight: bold; }
-        .btn { display: inline-block; background: #2d6a4f; color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; margin-top: 10px; font-weight: bold; font-size: 0.9rem; }
-        .btn:hover { background: #40916c; }
-        .notice-box { background: #e9f5ec; border-left: 5px solid #2d6a4f; padding: 15px; margin-bottom: 20px; border-radius: 4px; }
-        footer { text-align: center; padding: 20px; background: #081c15; color: white; margin-top: 40px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Political Science 1st Year Notes & PDF - NU Political Science Hub</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
+    body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+    
+    /* Header & Navigation */
+    header { background-color: #1b4332; color: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    header a { color: #fff; text-decoration: none; }
+    .logo { font-size: 20px; font-weight: bold; }
+    nav { display: flex; gap: 20px; font-size: 15px; }
+    nav a { font-weight: 500; transition: color 0.2s; }
+    nav a:hover { color: #d8f3dc; }
+
+    /* Main Container */
+    .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+    
+    /* Banner Area */
+    .hero { background-color: #1b4332; color: white; padding: 2.5rem 1rem; text-align: center; border-radius: 8px; margin-bottom: 25px; }
+    .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .notice-box { background: #e9f5ec; border-left: 5px solid #2d6a4f; padding: 15px; margin-bottom: 25px; border-radius: 4px; }
+    
+    /* Premium Monetization Banner */
+    .monetize-banner { background: linear-gradient(135deg, #1b4332, #2d6a4f); color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+    .monetize-banner h2 { margin-top: 0; color: #ffeb3b; font-size: 22px; }
+    .monetize-banner p { font-size: 16px; margin: 10px 0 20px; }
+    .wa-btn { background-color: #25D366; color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 25px; font-size: 16px; display: inline-block; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+
+    /* Course Grid & Cards */
+    .section-title { font-size: 1.5rem; margin-bottom: 15px; color: #1b4332; text-align: center; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #2d6a4f; display: flex; flex-direction: column; justify-content: space-between; }
+    .card h3 { color: #1b4332; margin-bottom: 8px; font-size: 1.2rem; }
+    .card p { font-size: 0.9rem; color: #555; margin-bottom: 12px; }
+    .code { background: #e9f5ec; padding: 2px 6px; border-radius: 4px; font-size: 0.85rem; color: #2d6a4f; font-weight: bold; display: inline-block; margin-bottom: 8px; }
+    
+    /* Buttons */
+    .btn { display: inline-block; background: #2d6a4f; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem; text-align: center; margin-top: auto; }
+    .btn:hover { background: #40916c; }
+
+    /* Footer */
+    footer { text-align: center; padding: 20px; background: #081c15; color: white; margin-top: 40px; font-size: 0.9rem; }
+  </style>
 </head>
 <body>
- <header>
-        <h1>পলিটিক্যাল সাইন্স ১ম বর্ষ - নোট ও বইয়ের হাব</h1>
-        <p>রাষ্ট্রবিজ্ঞান ১ম বর্ষের সকল বিষয়ের বোর্ড প্রশ্ন, উত্তর ও হ্যান্ডনোটের সংগ্রহশালা</p>
-    </header>
 
-    <div class="container">
-        <div class="notice-box">
-            <h3>📢 ১ম বর্ষের সকল বিষয়</h3>
-            <p>নিচে আপনার কাঙ্ক্ষিত বিষয়টি বেছে নিয়ে নোট ও পিডিএফ ফাইলগুলো ডাউনলোড বা ভিউ করুন।</p>
-        </div>
+  <!-- Navigation Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">NU Political Science Hub</a>
+    </div>
+    <nav>
+      <a href="index.html">হোম</a>
+      <a href="about.html">আমাদের সম্পর্কে</a>
+      <a href="contact.html">যোগাযোগ</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
 
-        <h2>বিষয়ভিত্তিক পিডিএফ ও সাজেশন (1st Year All Subjects)</h2>
-        <div class="grid">
-      <!-- Premium Suggestion Banner -->
-<div style="background: linear-gradient(135deg, #1b4332, #2d6a4f); color: white; padding: 25px; border-radius: 12px; margin: 30px auto; max-width: 90%; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
-  <h2 style="margin-top: 0; color: #ffeb3b; font-size: 22px;">🔥 ১ম বর্ষের স্পেশাল পরীক্ষার সাজেশন ও ১০০% কমন হ্যান্ডনোট!</h2>
-  <p style="font-size: 16px; line-height: 1.6; margin: 10px 0 20px;">সকল বিষয়ের শর্ট সাজেশন এবং A+ পাওয়ার উপযোগী হ্যান্ডনোট একসাথে পেতে আমাদের সাথে সরাসরি যোগাযোগ করুন। (ফি: মাত্র ৫০ টাকা)</p>
-  <a href="https://wa.me/8801301666512" target="_blank" style="background-color: #25D366; color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 25px; font-size: 16px; display: inline-block; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
-    💬 হোয়াটসঅ্যাপে সাজেশন সংগ্রহ করুন
-  </a>
-</div>      
-            <!-- Subject 1 -->
-            <div class="card">
-                <h3>১. স্বাধীন বাংলাদেশের অভ্যুদয়ের ইতিহাস</h3>
-                <p><span class="code">কোর্স কোড: 211501</span></p>
-                <p>বোর্ড প্রশ্ন, উত্তর, অধ্যায়ভিত্তিক নোট ও সাজেশন PDF</p>
-                <a href="<a href="https://drive.google.com/file/d/your-pdf-link" class="btn" target="_blank">পিডিএফ ডাউনলোড করুন</a>" class="btn">পিডিএফ ডাউনলোড করুন</a>
-            </div>
-
-            <!-- Subject 2 -->
-            <div class="card">
-                <h3>২. রাজনৈতিক প্রতিষ্ঠান ও সংগঠন</h3>
-                <p><span class="code">কোর্স কোড: 211901</span></p>
-                <p>বোর্ড প্রশ্ন, উত্তর, অধ্যায়ভিত্তিক নোট ও সাজেশন PDF</p>
-                <a href="<a href="https://drive.google.com/file/d/your-pdf-link" class="btn" target="_blank">পিডিএফ ডাউনলোড করুন</a>" class="btn">পিডিএফ ডাউনলোড করুন</a>
-            </div>
-
-            <!-- Subject 3 -->
-            <div class="card">
-                <h3>৩. প্রাচ্যের রাষ্ট্রচিন্তা</h3>
-                <p><span class="code">কোর্স কোড: 211903</span></p>
-                <p>বোর্ড প্রশ্ন, উত্তর, অধ্যায়ভিত্তিক নোট ও সাজেশন PDF</p>
-                <a href="<a href="https://drive.google.com/file/d/your-pdf-link" class="btn" target="_blank">পিডিএফ ডাউনলোড করুন</a>" class="btn">পিডিএফ ডাউনলোড করুন</a>
-            </div>
-
-            <!-- Subject 4 -->
-            <div class="card">
-                <h3>৪. লোকপ্রশাসন পরিচিতি</h3>
-                <p><span class="code">কোর্স কোড: 211905</span></p>
-                <p>বোর্ড প্রশ্ন, উত্তর, অধ্যায়ভিত্তিক নোট ও সাজেশন PDF</p>
-                <a href="<a href="https://drive.google.com/file/d/your-pdf-link" class="btn" target="_blank">পিডিএফ ডাউনলোড করুন</a>" class="btn">পিডিএফ ডাউনলোড করুন</a>
-            </div>
-
-            <!-- Subject 5 -->
-            <div class="card">
-                <h3>৫. দক্ষিণ এশিয়ার সরকার ও রাজনীতি</h3>
-                <p><span class="code">কোর্স কোড: 211907</span></p>
-                <p>ভারত, পাকিস্তান ও নেপালের সরকার ও রাজনীতি সম্পর্কিত নোট ও সাজেশন PDF</p>
-                <a href="<a href="https://drive.google.com/file/d/your-pdf-link" class="btn" target="_blank">পিডিএফ ডাউনলোড করুন</a>" class="btn">পিডিএফ ডাউনলোড করুন</a>
-            </div>
-
-            <!-- Subject 6 -->
-            <div class="card">
-                <h3>৬. সমাজবিজ্ঞান পরিচিতি</h3>
-                <p><span class="code">কোর্স কোড: 212009</span></p>
-                <p>বোর্ড প্রশ্ন, উত্তর, অধ্যায়ভিত্তিক নোট ও সাজেশন PDF</p>
-                <a href="<a href="https://drive.google.com/file/d/your-pdf-link" class="btn" target="_blank">পিডিএফ ডাউনলোড করুন</a>" class="btn">পিডিএফ ডাউনলোড করুন</a>
-            </div>
-
-            <!-- Subject 7 -->
-            <div class="card">
-                <h3>৭. তথ্য ও যোগাযোগ প্রযুক্তি (ICT)</h3>
-                <p><span class="code">কম্পিউটার ও তথ্য প্রযুক্তি</span></p>
-                <p>আইসিটি বিষয়ের বোর্ড প্রশ্ন, সংক্ষিপ্ত নোট ও সাজেশন PDF</p>
-                <a href="<a href="https://drive.google.com/file/d/your-pdf-link" class="btn" target="_blank">পিডিএফ ডাউনলোড করুন</a>" class="btn">পিডিএফ ডাউনলোড করুন</a>
-            </div>
-
-        </div>
+  <div class="container">
+    
+    <!-- Hero Header Banner -->
+    <div class="hero">
+      <h1>পলিটিক্যাল সাইন্স ১ম বর্ষ - নোট ও বইয়ের হাব</h1>
+      <p>রাষ্ট্রবিজ্ঞান ১ম বর্ষের সকল বিষয়ের বোর্ড প্রশ্ন, উত্তর ও হ্যান্ডনোটের সংগ্রহশালা</p>
     </div>
 
-    <footer>
-        <p>&copy; 2026 পলিটিক্যাল সাইন্স রিসোর্স হাব | সর্বস্বত্ব সংরক্ষিত</p>
-    </footer>
+    <!-- Notice Box -->
+    <div class="notice-box">
+      <strong>📌 ১ম বর্ষের সকল বিষয়:</strong><br>
+      নিচে আপনার কাঙ্ক্ষিত বিষয়টি বেছে নিয়ে নোট ও পিডিএফ ফাইলগুলো ডাউনলোড বা ভিউ করুন।
+    </div>
+
+    <!-- Premium Monetization Banner -->
+    <div class="monetize-banner">
+      <h2>🔥 ১ম বর্ষের স্পেশাল পরীক্ষার সাজেশন ও ১০০% কমন হ্যান্ডনোট!</h2>
+      <p>সকল বিষয়ের শর্ট সাজেশন এবং A+ পাওয়ার উপযোগী হ্যান্ডনোট একসাথে পেতে আমাদের সাথে সরাসরি যোগাযোগ করুন। (ফি: মাত্র ৫০ টাকা)</p>
+      <a href="https://wa.me/8801301666512" target="_blank" class="wa-btn">
+        💬 হোয়াটসঅ্যাপে সাজেশন সংগ্রহ করুন
+      </a>
+    </div>
+
+    <h2 class="section-title">বিষয়ভিত্তিক পিডিএফ ও সাজেশন (1st Year All Subjects)</h2>
+
+    <!-- Course Grid -->
+    <div class="grid">
+      
+      <!-- Subject 1 -->
+      <div class="card">
+        <div>
+          <h3>১. স্বাধীন বাংলাদেশের অভ্যুদয়ের ইতিহাস</h3>
+          <span class="code">কোর্স কোড: 211501</span>
+          <p>বোর্ড প্রশ্ন, উত্তর, অধ্যায়ভিত্তিক নোট ও সাজেশন PDF</p>
+        </div>
+        <a href="#" target="_blank" class="btn">পিডিএফ ডাউনলোড করুন</a>
+      </div>
+
+      <!-- Subject 2 -->
+      <div class="card">
+        <div>
+          <h3>২. রাজনৈতিক প্রতিষ্ঠান ও সংগঠন</h3>
+          <span class="code">কোর্স কোড: 211901</span>
+          <p>বোর্ড প্রশ্ন, উত্তর, অধ্যায়ভিত্তিক নোট ও সাজেশন PDF</p>
+        </div>
+        <a href="#" target="_blank" class="btn">পিডিএফ ডাউনলোড করুন</a>
+      </div>
+
+      <!-- Subject 3 -->
+      <div class="card">
+        <div>
+          <h3>৩. প্রাচ্যের রাষ্ট্রচিন্তা</h3>
+          <span class="code">কোর্স কোড: 211903</span>
+          <p>বোর্ড প্রশ্ন, উত্তর, অধ্যায়ভিত্তিক নোট ও সাজেশন PDF</p>
+        </div>
+        <a href="#" target="_blank" class="btn">পিডিএফ ডাউনলোড করুন</a>
+      </div>
+
+      <!-- Subject 4 -->
+      <div class="card">
+        <div>
+          <h3>৪. লোকপ্রশাসন পরিচিতি</h3>
+          <span class="code">কোর্স কোড: 211905</span>
+          <p>বোর্ড প্রশ্ন, উত্তর, অধ্যায়ভিত্তিক নোট ও সাজেশন PDF</p>
+        </div>
+        <a href="#" target="_blank" class="btn">পিডিএফ ডাউনলোড করুন</a>
+      </div>
+
+      <!-- Subject 5 -->
+      <div class="card">
+        <div>
+          <h3>৫. দক্ষিণ এশিয়ার সরকার ও রাজনীতি</h3>
+          <span class="code">কোর্স কোড: 211907</span>
+          <p>ভারত, পাকিস্তান ও নেপালের সরকার ও রাজনীতি সম্পর্কিত নোট ও সাজেশন PDF</p>
+        </div>
+        <a href="#" target="_blank" class="btn">পিডিএফ ডাউনলোড করুন</a>
+      </div>
+
+      <!-- Subject 6 -->
+      <div class="card">
+        <div>
+          <h3>৬. সমাজবিজ্ঞান পরিচিতি</h3>
+          <span class="code">কোর্স কোড: 212009</span>
+          <p>বোর্ড প্রশ্ন, উত্তর, অধ্যায়ভিত্তিক নোট ও সাজেশন PDF</p>
+        </div>
+        <a href="#" target="_blank" class="btn">পিডিএফ ডাউনলোড করুন</a>
+      </div>
+
+      <!-- Subject 7 -->
+      <div class="card">
+        <div>
+          <h3>৭. তথ্য ও যোগাযোগ প্রযুক্তি (ICT)</h3>
+          <span class="code">কম্পিউটার ও তথ্য প্রযুক্তি</span>
+          <p>আইসিটি বিষয়ের বোর্ড প্রশ্ন, সংক্ষিপ্ত নোট ও সাজেশন PDF</p>
+        </div>
+        <a href="#" target="_blank" class="btn">পিডিএফ ডাউনলোড করুন</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 পলিটিক্যাল সাইন্স রিসোর্স হাব | সর্বস্বত্ব সংরক্ষিত</p>
+  </footer>
 
 </body>
 </html>
